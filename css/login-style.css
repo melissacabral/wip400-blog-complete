@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Coustard|Droid+Sans:400,700);
+html {
+	box-sizing: border-box;
+	background-color:#DDDDDD;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body{
+	margin:10vh auto;
+	max-width:400px;
+	font-family: 'Droid Sans', Arial, Helvetica, sans-serif; 
+	background-color:white;
+	padding:1em;
+}
+label{
+	display: block;
+	margin-bottom:.25em;
+}
+input{
+	display: block;
+	padding:.35em;
+	margin-bottom:1em;
+	width:100%;
+	border:solid 1px #DDDDDD;
+}
+input[type=checkbox]{
+	display: inline;
+	width:auto;
+}
+input[type=submit]{
+	background-color: #66CCCC;
+	border: medium none;
+	border-radius: 10px 10px 10px 10px;
+	color: #FFFFFF !important;
+	cursor: pointer;
+	font-size: 120%;
+	margin-top: 20px !important;
+	padding: 5px;
+}
+a{
+	text-decoration: none;
+	color:#9A9A9A;
+}
