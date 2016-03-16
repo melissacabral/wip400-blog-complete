@@ -40,9 +40,7 @@ if($_POST['did_upload']){
 	
 		case 'image/png':
 			// Create an Image from it so we can do the resize
-			$required_memory = Round($width * $height * $size['bits']);
-			$new_limit=memory_get_usage() + $required_memory;
-			ini_set("memory_limit", $new_limit);
+			ini_set('memory_limit','16M');
 			$src = imagecreatefrompng($uploadedfile);
 			ini_restore ("memory_limit");
 		break;
